@@ -1,0 +1,16 @@
+{
+  "name": "web3api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "web3": "^0.20.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "desimira",
+  "license": "ISC"
+}
