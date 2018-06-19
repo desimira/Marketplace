@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.3.1",
+    "truffle-hdwallet-provider-privkey": "^0.2.0",
     "web3": "^0.20.4"
   },
   "devDependencies": {},
