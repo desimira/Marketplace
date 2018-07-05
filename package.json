@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "etherlime": "^0.4.3",
     "jquery": "^3.3.1",
     "truffle-hdwallet-provider-privkey": "^0.2.0",
     "web3": "^0.20.4"
