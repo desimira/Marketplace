@@ -1,25 +1,26 @@
-pragma solidity ^0.4.19;
+pragma solidity ^0.5.0;
+pragma experimental ABIEncoderV2;
 
 import '../../Upgradeability/IOwnableUpgradeableImplementation.sol';
 
 contract IMarketplace is IOwnableUpgradeableImplementation {
 
-    function buy(bytes32 ID, uint quantity) public payable;
+    function buy(bytes memory ID, uint quantity) public payable;
     
-    function update(bytes32 ID, uint newQuantity) public;
+    function update(bytes memory ID, uint newQuantity) public;
     
-    function updatePrice(bytes32 ID, uint newQuantity) internal;
+    function updatePrice(bytes memory ID, uint newQuantity) internal;
     
     //creates a new product and returns its ID
-    function newProduct(string name, uint price, uint quantity) public returns(bytes32);
+    function newProduct(string memory name, uint price, uint quantity) public returns(bytes memory);
     
-    function removeProduct(bytes32 ID) public;
+    function removeProduct(bytes memory ID) public;
     
-    function getProduct(bytes32 ID) public view returns(string name, uint price, uint quantity);
+    function getProduct(bytes memory ID) public view returns(string memory name, uint price, uint quantity);
     
-    function getProducts() public view returns(bytes32[]);
+    function getProducts() public view returns(bytes[] memory);
     
-    function getPrice(bytes32 ID, uint quantity) public view returns (uint);
+    function getPrice(bytes memory ID, uint quantity) public view returns (uint);
     
     function withdraw() public;
     

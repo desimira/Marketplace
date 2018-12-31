@@ -1,4 +1,4 @@
-pragma solidity ^0.4.19;
+pragma solidity ^0.5.0;
 import './SafeMath.sol';
 
 library ProductLib {
@@ -33,7 +33,7 @@ library ProductLib {
         self.price = self.price.sub(10);
     }
     
-    function regNewProduct(string name, uint price, uint quantity, uint IDindex, bool wasIncreased) internal pure returns(Product) {
+    function regNewProduct(string memory name, uint price, uint quantity, uint IDindex, bool wasIncreased) internal pure returns(Product memory) {
         Product memory product = Product({name:name, price:price, quantity:quantity, IDindex:IDindex, wasIncreased: wasIncreased});
         
         return product;

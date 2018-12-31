@@ -5,10 +5,10 @@ const expectThrow = require('./util').expectThrow;
 
 contract('register new product tests', async (accounts) => {
 	let implementedContract;
-    let proxy;
-    let marketplace;
+  let proxy;
+  let marketplace;
 
-    const _owner = accounts[0];
+  const _owner = accounts[0];
 	const _notOwner = accounts[1];
 	
 
@@ -44,10 +44,10 @@ contract('register new product tests', async (accounts) => {
 contract('update product tests', async (accounts) => {
 
 	let implementedContract;
-    let proxy;
-    let marketplace;
+  let proxy;
+  let marketplace;
 
-    const _owner = accounts[0];
+  const _owner = accounts[0];
 	const _notOwner = accounts[1];
 
 	beforeEach(async function() {
@@ -64,8 +64,8 @@ contract('update product tests', async (accounts) => {
 		await instance.update(productID[0], 10, {from:accounts[0]});
 		let newProduct = await instance.getProduct.call(productID[0]);
 		assert.equal(newProduct[0], "kola")
-		assert.equal(newProduct[1], 100)
-		assert.equal(newProduct[2], 10)
+		assert.equal(newProduct[1].toNumber(), 100)
+		assert.equal(newProduct[2].toNumber(), 10)
 	});
 
 	it('should not allow to update unexisting product', async() => {

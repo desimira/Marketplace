@@ -1,4 +1,4 @@
-pragma solidity ^0.4.23;
+pragma solidity ^0.5.0;
 
 import "../Marketplace/Icontracts/IOwnable.sol";
 
@@ -9,7 +9,7 @@ contract IOwnableUpgradeableImplementation is IOwnable {
     
     function getOwner() public view returns (address);
 
-    function upgradeImplementation(address _newImpl) public;
+    function upgradeImplementation(address payable _newImpl) public;
 
     function getImplementation() public view returns (address);
 }

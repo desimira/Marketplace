@@ -1,4 +1,4 @@
-pragma solidity ^0.4.23;
+pragma solidity ^0.5.0;
 
 import "./SharedStorage.sol";
 import "../Marketplace/Ownable.sol";
@@ -17,9 +17,9 @@ contract OwnableUpgradeableImplementation is SharedStorage, Ownable {
 
     event UpgradedContract(address indexed _newImpl);
 
-    function upgradeImplementation(address _newImpl) public onlyOwner {
+    function upgradeImplementation(address payable _newImpl) public onlyOwner {
         contractImplementation = _newImpl;
-        UpgradedContract(_newImpl);
+        emit UpgradedContract(_newImpl);
     }
 
     function getImplementation() public view returns (address) {
