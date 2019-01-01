@@ -88,7 +88,7 @@ contract Marketplace is IMarketplace, OwnableUpgradeableImplementation {
     }
     
     function withdraw() public onlyOwner {
-        address(owner).transfer(address(this).balance);
+        owner.transfer(address(this).balance);
     }
     
     function getBalance() public view returns (uint){

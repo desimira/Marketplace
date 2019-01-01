@@ -2,7 +2,7 @@ pragma solidity ^0.5.0;
 import './Icontracts/IOwnable.sol';
 
 contract Ownable is IOwnable{
-    address payable public owner;
+    address payable owner;
     
     
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);

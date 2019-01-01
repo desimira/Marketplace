@@ -17,7 +17,7 @@ contract OwnableUpgradeableImplementation is SharedStorage, Ownable {
 
     event UpgradedContract(address indexed _newImpl);
 
-    function upgradeImplementation(address payable _newImpl) public onlyOwner {
+    function upgradeImplementation(address _newImpl) public onlyOwner {
         contractImplementation = _newImpl;
         emit UpgradedContract(_newImpl);
     }

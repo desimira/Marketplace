@@ -1,0 +1,168 @@
+{
+  "contractName": "SharedStorage",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "contractImplementation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060e38061001f6000396000f3fe6080604052348015600f57600080fd5b50600436106045576000357c0100000000000000000000000000000000000000000000000000000000900480639e72370b14604a575b600080fd5b60506092565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea165627a7a72305820f6d9da67d5b920eb3b71649b023a44d4c690033ef58ccceb4936d6f1fec895570029",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b50600436106045576000357c0100000000000000000000000000000000000000000000000000000000900480639e72370b14604a575b600080fd5b60506092565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea165627a7a72305820f6d9da67d5b920eb3b71649b023a44d4c690033ef58ccceb4936d6f1fec895570029",
+  "sourceMap": "25:69:17:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:69:17;;;;;;;",
+  "deployedSourceMap": "25:69:17:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:69:17;;;;;;;;;;;;;;;;;;;;54:37;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract SharedStorage {\n    address public contractImplementation;\n}",
+  "sourcePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Upgradeability/SharedStorage.sol",
+  "ast": {
+    "absolutePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Upgradeability/SharedStorage.sol",
+    "exportedSymbols": {
+      "SharedStorage": [
+        1846
+      ]
+    },
+    "id": 1847,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1843,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:17"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1846,
+        "linearizedBaseContracts": [
+          1846
+        ],
+        "name": "SharedStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1845,
+            "name": "contractImplementation",
+            "nodeType": "VariableDeclaration",
+            "scope": 1846,
+            "src": "54:37:17",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 1844,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "54:7:17",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1847,
+        "src": "25:69:17"
+      }
+    ],
+    "src": "0:94:17"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Upgradeability/SharedStorage.sol",
+    "exportedSymbols": {
+      "SharedStorage": [
+        1846
+      ]
+    },
+    "id": 1847,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1843,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:17"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1846,
+        "linearizedBaseContracts": [
+          1846
+        ],
+        "name": "SharedStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1845,
+            "name": "contractImplementation",
+            "nodeType": "VariableDeclaration",
+            "scope": 1846,
+            "src": "54:37:17",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 1844,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "54:7:17",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1847,
+        "src": "25:69:17"
+      }
+    ],
+    "src": "0:94:17"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "0.10.0",
+  "updatedAt": "2018-12-31T15:24:32.610Z"
+}

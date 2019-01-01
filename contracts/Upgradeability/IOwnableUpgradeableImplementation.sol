@@ -9,7 +9,7 @@ contract IOwnableUpgradeableImplementation is IOwnable {
     
     function getOwner() public view returns (address);
 
-    function upgradeImplementation(address payable _newImpl) public;
+    function upgradeImplementation(address _newImpl) public;
 
     function getImplementation() public view returns (address);
 }
