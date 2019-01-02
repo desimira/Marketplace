@@ -68,14 +68,14 @@
     "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/Proxy.sol",
     "exportedSymbols": {
       "Proxy": [
-        1825
+        1866
       ]
     },
-    "id": 1826,
+    "id": 1867,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1782,
+        "id": 1823,
         "literals": [
           "solidity",
           "^",
@@ -88,10 +88,10 @@
       {
         "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/Delegate.sol",
         "file": "./Delegate.sol",
-        "id": 1783,
+        "id": 1824,
         "nodeType": "ImportDirective",
-        "scope": 1826,
-        "sourceUnit": 1694,
+        "scope": 1867,
+        "sourceUnit": 1735,
         "src": "26:24:16",
         "symbolAliases": [],
         "unitAlias": ""
@@ -99,10 +99,10 @@
       {
         "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/SharedStorage.sol",
         "file": "./SharedStorage.sol",
-        "id": 1784,
+        "id": 1825,
         "nodeType": "ImportDirective",
-        "scope": 1826,
-        "sourceUnit": 1831,
+        "scope": 1867,
+        "sourceUnit": 1872,
         "src": "51:29:16",
         "symbolAliases": [],
         "unitAlias": ""
@@ -113,17 +113,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1785,
+              "id": 1826,
               "name": "SharedStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1830,
+              "referencedDeclaration": 1871,
               "src": "100:13:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SharedStorage_$1830",
+                "typeIdentifier": "t_contract$_SharedStorage_$1871",
                 "typeString": "contract SharedStorage"
               }
             },
-            "id": 1786,
+            "id": 1827,
             "nodeType": "InheritanceSpecifier",
             "src": "100:13:16"
           },
@@ -131,33 +131,33 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1787,
+              "id": 1828,
               "name": "Delegate",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1693,
+              "referencedDeclaration": 1734,
               "src": "115:8:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Delegate_$1693",
+                "typeIdentifier": "t_contract$_Delegate_$1734",
                 "typeString": "contract Delegate"
               }
             },
-            "id": 1788,
+            "id": 1829,
             "nodeType": "InheritanceSpecifier",
             "src": "115:8:16"
           }
         ],
         "contractDependencies": [
-          1693,
-          1830
+          1734,
+          1871
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1825,
+        "id": 1866,
         "linearizedBaseContracts": [
-          1825,
-          1693,
-          1830
+          1866,
+          1734,
+          1871
         ],
         "name": "Proxy",
         "nodeType": "ContractDefinition",
@@ -165,20 +165,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1792,
+            "id": 1833,
             "name": "UpgradedContract",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1791,
+              "id": 1832,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1790,
+                  "id": 1831,
                   "indexed": true,
                   "name": "_newImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1792,
+                  "scope": 1833,
                   "src": "154:24:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -187,7 +187,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1789,
+                    "id": 1830,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "154:7:16",
@@ -206,25 +206,25 @@
           },
           {
             "body": {
-              "id": 1801,
+              "id": 1842,
               "nodeType": "Block",
               "src": "228:55:16",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1799,
+                    "id": 1840,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1797,
+                      "id": 1838,
                       "name": "contractImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1829,
+                      "referencedDeclaration": 1870,
                       "src": "238:22:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -235,11 +235,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1798,
+                      "id": 1839,
                       "name": "_contractImpl",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1794,
+                      "referencedDeclaration": 1835,
                       "src": "263:13:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -252,14 +252,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 1800,
+                  "id": 1841,
                   "nodeType": "ExpressionStatement",
                   "src": "238:38:16"
                 }
               ]
             },
             "documentation": null,
-            "id": 1802,
+            "id": 1843,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -267,15 +267,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1795,
+              "id": 1836,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1794,
+                  "id": 1835,
                   "name": "_contractImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1802,
+                  "scope": 1843,
                   "src": "198:21:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -284,7 +284,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1793,
+                    "id": 1834,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "198:7:16",
@@ -301,12 +301,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1796,
+              "id": 1837,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "228:0:16"
             },
-            "scope": 1825,
+            "scope": 1866,
             "src": "186:97:16",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -314,7 +314,7 @@
           },
           {
             "body": {
-              "id": 1809,
+              "id": 1850,
               "nodeType": "Block",
               "src": "319:53:16",
               "statements": [
@@ -324,11 +324,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1806,
+                        "id": 1847,
                         "name": "contractImplementation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1829,
+                        "referencedDeclaration": 1870,
                         "src": "342:22:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -343,18 +343,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 1805,
+                      "id": 1846,
                       "name": "delegatedFwd",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1692,
+                      "referencedDeclaration": 1733,
                       "src": "329:12:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 1807,
+                    "id": 1848,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -368,14 +368,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1808,
+                  "id": 1849,
                   "nodeType": "ExpressionStatement",
                   "src": "329:36:16"
                 }
               ]
             },
             "documentation": null,
-            "id": 1810,
+            "id": 1851,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -383,19 +383,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1803,
+              "id": 1844,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "301:2:16"
             },
             "payable": true,
             "returnParameters": {
-              "id": 1804,
+              "id": 1845,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "319:0:16"
             },
-            "scope": 1825,
+            "scope": 1866,
             "src": "293:79:16",
             "stateMutability": "payable",
             "superFunction": null,
@@ -403,25 +403,25 @@
           },
           {
             "body": {
-              "id": 1823,
+              "id": 1864,
               "nodeType": "Block",
               "src": "434:91:16",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1817,
+                    "id": 1858,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1815,
+                      "id": 1856,
                       "name": "contractImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1829,
+                      "referencedDeclaration": 1870,
                       "src": "444:22:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -432,11 +432,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1816,
+                      "id": 1857,
                       "name": "_newImpl",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1812,
+                      "referencedDeclaration": 1853,
                       "src": "469:8:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -449,7 +449,7 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 1818,
+                  "id": 1859,
                   "nodeType": "ExpressionStatement",
                   "src": "444:33:16"
                 },
@@ -459,11 +459,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1820,
+                        "id": 1861,
                         "name": "_newImpl",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1812,
+                        "referencedDeclaration": 1853,
                         "src": "509:8:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -478,18 +478,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 1819,
+                      "id": 1860,
                       "name": "UpgradedContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1792,
+                      "referencedDeclaration": 1833,
                       "src": "492:16:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 1821,
+                    "id": 1862,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -503,14 +503,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1822,
+                  "id": 1863,
                   "nodeType": "EmitStatement",
                   "src": "487:31:16"
                 }
               ]
             },
             "documentation": null,
-            "id": 1824,
+            "id": 1865,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -518,15 +518,15 @@
             "name": "upgradeImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1813,
+              "id": 1854,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1812,
+                  "id": 1853,
                   "name": "_newImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1824,
+                  "scope": 1865,
                   "src": "409:16:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -535,7 +535,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1811,
+                    "id": 1852,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "409:7:16",
@@ -552,19 +552,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1814,
+              "id": 1855,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "434:0:16"
             },
-            "scope": 1825,
+            "scope": 1866,
             "src": "378:147:16",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1826,
+        "scope": 1867,
         "src": "82:446:16"
       }
     ],
@@ -574,14 +574,14 @@
     "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/Proxy.sol",
     "exportedSymbols": {
       "Proxy": [
-        1825
+        1866
       ]
     },
-    "id": 1826,
+    "id": 1867,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1782,
+        "id": 1823,
         "literals": [
           "solidity",
           "^",
@@ -594,10 +594,10 @@
       {
         "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/Delegate.sol",
         "file": "./Delegate.sol",
-        "id": 1783,
+        "id": 1824,
         "nodeType": "ImportDirective",
-        "scope": 1826,
-        "sourceUnit": 1694,
+        "scope": 1867,
+        "sourceUnit": 1735,
         "src": "26:24:16",
         "symbolAliases": [],
         "unitAlias": ""
@@ -605,10 +605,10 @@
       {
         "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/SharedStorage.sol",
         "file": "./SharedStorage.sol",
-        "id": 1784,
+        "id": 1825,
         "nodeType": "ImportDirective",
-        "scope": 1826,
-        "sourceUnit": 1831,
+        "scope": 1867,
+        "sourceUnit": 1872,
         "src": "51:29:16",
         "symbolAliases": [],
         "unitAlias": ""
@@ -619,17 +619,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1785,
+              "id": 1826,
               "name": "SharedStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1830,
+              "referencedDeclaration": 1871,
               "src": "100:13:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SharedStorage_$1830",
+                "typeIdentifier": "t_contract$_SharedStorage_$1871",
                 "typeString": "contract SharedStorage"
               }
             },
-            "id": 1786,
+            "id": 1827,
             "nodeType": "InheritanceSpecifier",
             "src": "100:13:16"
           },
@@ -637,33 +637,33 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1787,
+              "id": 1828,
               "name": "Delegate",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1693,
+              "referencedDeclaration": 1734,
               "src": "115:8:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Delegate_$1693",
+                "typeIdentifier": "t_contract$_Delegate_$1734",
                 "typeString": "contract Delegate"
               }
             },
-            "id": 1788,
+            "id": 1829,
             "nodeType": "InheritanceSpecifier",
             "src": "115:8:16"
           }
         ],
         "contractDependencies": [
-          1693,
-          1830
+          1734,
+          1871
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1825,
+        "id": 1866,
         "linearizedBaseContracts": [
-          1825,
-          1693,
-          1830
+          1866,
+          1734,
+          1871
         ],
         "name": "Proxy",
         "nodeType": "ContractDefinition",
@@ -671,20 +671,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1792,
+            "id": 1833,
             "name": "UpgradedContract",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1791,
+              "id": 1832,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1790,
+                  "id": 1831,
                   "indexed": true,
                   "name": "_newImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1792,
+                  "scope": 1833,
                   "src": "154:24:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -693,7 +693,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1789,
+                    "id": 1830,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "154:7:16",
@@ -712,25 +712,25 @@
           },
           {
             "body": {
-              "id": 1801,
+              "id": 1842,
               "nodeType": "Block",
               "src": "228:55:16",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1799,
+                    "id": 1840,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1797,
+                      "id": 1838,
                       "name": "contractImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1829,
+                      "referencedDeclaration": 1870,
                       "src": "238:22:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -741,11 +741,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1798,
+                      "id": 1839,
                       "name": "_contractImpl",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1794,
+                      "referencedDeclaration": 1835,
                       "src": "263:13:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -758,14 +758,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 1800,
+                  "id": 1841,
                   "nodeType": "ExpressionStatement",
                   "src": "238:38:16"
                 }
               ]
             },
             "documentation": null,
-            "id": 1802,
+            "id": 1843,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -773,15 +773,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1795,
+              "id": 1836,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1794,
+                  "id": 1835,
                   "name": "_contractImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1802,
+                  "scope": 1843,
                   "src": "198:21:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -790,7 +790,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1793,
+                    "id": 1834,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "198:7:16",
@@ -807,12 +807,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1796,
+              "id": 1837,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "228:0:16"
             },
-            "scope": 1825,
+            "scope": 1866,
             "src": "186:97:16",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -820,7 +820,7 @@
           },
           {
             "body": {
-              "id": 1809,
+              "id": 1850,
               "nodeType": "Block",
               "src": "319:53:16",
               "statements": [
@@ -830,11 +830,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1806,
+                        "id": 1847,
                         "name": "contractImplementation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1829,
+                        "referencedDeclaration": 1870,
                         "src": "342:22:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -849,18 +849,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 1805,
+                      "id": 1846,
                       "name": "delegatedFwd",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1692,
+                      "referencedDeclaration": 1733,
                       "src": "329:12:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 1807,
+                    "id": 1848,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -874,14 +874,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1808,
+                  "id": 1849,
                   "nodeType": "ExpressionStatement",
                   "src": "329:36:16"
                 }
               ]
             },
             "documentation": null,
-            "id": 1810,
+            "id": 1851,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -889,19 +889,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1803,
+              "id": 1844,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "301:2:16"
             },
             "payable": true,
             "returnParameters": {
-              "id": 1804,
+              "id": 1845,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "319:0:16"
             },
-            "scope": 1825,
+            "scope": 1866,
             "src": "293:79:16",
             "stateMutability": "payable",
             "superFunction": null,
@@ -909,25 +909,25 @@
           },
           {
             "body": {
-              "id": 1823,
+              "id": 1864,
               "nodeType": "Block",
               "src": "434:91:16",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1817,
+                    "id": 1858,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1815,
+                      "id": 1856,
                       "name": "contractImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1829,
+                      "referencedDeclaration": 1870,
                       "src": "444:22:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -938,11 +938,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1816,
+                      "id": 1857,
                       "name": "_newImpl",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1812,
+                      "referencedDeclaration": 1853,
                       "src": "469:8:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -955,7 +955,7 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 1818,
+                  "id": 1859,
                   "nodeType": "ExpressionStatement",
                   "src": "444:33:16"
                 },
@@ -965,11 +965,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1820,
+                        "id": 1861,
                         "name": "_newImpl",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1812,
+                        "referencedDeclaration": 1853,
                         "src": "509:8:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -984,18 +984,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 1819,
+                      "id": 1860,
                       "name": "UpgradedContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1792,
+                      "referencedDeclaration": 1833,
                       "src": "492:16:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 1821,
+                    "id": 1862,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1009,14 +1009,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1822,
+                  "id": 1863,
                   "nodeType": "EmitStatement",
                   "src": "487:31:16"
                 }
               ]
             },
             "documentation": null,
-            "id": 1824,
+            "id": 1865,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1024,15 +1024,15 @@
             "name": "upgradeImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1813,
+              "id": 1854,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1812,
+                  "id": 1853,
                   "name": "_newImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1824,
+                  "scope": 1865,
                   "src": "409:16:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1041,7 +1041,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1811,
+                    "id": 1852,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "409:7:16",
@@ -1058,19 +1058,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1814,
+              "id": 1855,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "434:0:16"
             },
-            "scope": 1825,
+            "scope": 1866,
             "src": "378:147:16",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1826,
+        "scope": 1867,
         "src": "82:446:16"
       }
     ],
@@ -1081,6 +1081,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-25T12:51:02.648Z"
+  "schemaVersion": "0.9.18",
+  "updatedAt": "2018-12-18T13:29:47.769Z"
 }

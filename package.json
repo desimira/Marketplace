@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "etherlime": "^0.4.3",
+    "etherlime": "^0.4.7",
+    "ethers": "^3.0.25",
+    "http-server": "^0.11.1",
+    "ipfs-api": "^22.2.2",
     "jquery": "^3.3.1",
     "truffle-hdwallet-provider-privkey": "^0.2.0",
     "web3": "^0.20.4"

@@ -4,8 +4,11 @@ import '../../Upgradeability/IOwnableUpgradeableImplementation.sol';
 
 contract IMarketplace is IOwnableUpgradeableImplementation {
 
+    event LogNewProduct(string name, bytes32 ID);
+    event LogPurchase(string productName, uint quantity);
+
     function buy(bytes32 ID, uint quantity) public payable;
-    
+
     function update(bytes32 ID, uint newQuantity) public;
     
     function updatePrice(bytes32 ID, uint newQuantity) internal;

@@ -4,12 +4,13 @@ import './SafeMath.sol';
 import './ProductLib.sol';
 import './Icontracts/IMarketplace.sol';
 
+
 contract Marketplace is IMarketplace, OwnableUpgradeableImplementation {
     using SafeMath for uint;
     using ProductLib for ProductLib.Product;
     
-    event LogNewProduct(string name, bytes32 ID);
-    event LogPurchase(string productName, uint quantity);
+    // event LogNewProduct(string name, bytes32 ID);
+    // event LogPurchase(string productName, uint quantity);
     
 
     mapping (bytes32 => ProductLib.Product) stock;

@@ -94,14 +94,14 @@
     "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/IOwnableUpgradeableImplementation.sol",
     "exportedSymbols": {
       "IOwnableUpgradeableImplementation": [
-        1717
+        1758
       ]
     },
-    "id": 1718,
+    "id": 1759,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1695,
+        "id": 1736,
         "literals": [
           "solidity",
           "^",
@@ -114,10 +114,10 @@
       {
         "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Marketplace/Icontracts/IOwnable.sol",
         "file": "../Marketplace/Icontracts/IOwnable.sol",
-        "id": 1696,
+        "id": 1737,
         "nodeType": "ImportDirective",
-        "scope": 1718,
-        "sourceUnit": 350,
+        "scope": 1759,
+        "sourceUnit": 406,
         "src": "26:48:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -128,31 +128,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1697,
+              "id": 1738,
               "name": "IOwnable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 349,
+              "referencedDeclaration": 405,
               "src": "123:8:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IOwnable_$349",
+                "typeIdentifier": "t_contract$_IOwnable_$405",
                 "typeString": "contract IOwnable"
               }
             },
-            "id": 1698,
+            "id": 1739,
             "nodeType": "InheritanceSpecifier",
             "src": "123:8:14"
           }
         ],
         "contractDependencies": [
-          349
+          405
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1717,
+        "id": 1758,
         "linearizedBaseContracts": [
-          1717,
-          349
+          1758,
+          405
         ],
         "name": "IOwnableUpgradeableImplementation",
         "nodeType": "ContractDefinition",
@@ -160,7 +160,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1701,
+            "id": 1742,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -168,19 +168,19 @@
             "name": "init",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1699,
+              "id": 1740,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "152:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1700,
+              "id": 1741,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "161:0:14"
             },
-            "scope": 1717,
+            "scope": 1758,
             "src": "139:23:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -189,7 +189,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1706,
+            "id": 1747,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -197,22 +197,22 @@
             "name": "getOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1702,
+              "id": 1743,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "189:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1705,
+              "id": 1746,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1704,
+                  "id": 1745,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1706,
+                  "scope": 1747,
                   "src": "213:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -221,7 +221,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1703,
+                    "id": 1744,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "213:7:14",
@@ -236,7 +236,7 @@
               ],
               "src": "212:9:14"
             },
-            "scope": 1717,
+            "scope": 1758,
             "src": "172:50:14",
             "stateMutability": "view",
             "superFunction": null,
@@ -245,7 +245,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1711,
+            "id": 1752,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -253,15 +253,15 @@
             "name": "upgradeImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1709,
+              "id": 1750,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1708,
+                  "id": 1749,
                   "name": "_newImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1711,
+                  "scope": 1752,
                   "src": "259:16:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -270,7 +270,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1707,
+                    "id": 1748,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "259:7:14",
@@ -287,12 +287,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1710,
+              "id": 1751,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "283:0:14"
             },
-            "scope": 1717,
+            "scope": 1758,
             "src": "228:56:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -301,7 +301,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1716,
+            "id": 1757,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -309,22 +309,22 @@
             "name": "getImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1712,
+              "id": 1753,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "316:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1715,
+              "id": 1756,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1714,
+                  "id": 1755,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1716,
+                  "scope": 1757,
                   "src": "340:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -333,7 +333,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1713,
+                    "id": 1754,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "340:7:14",
@@ -348,14 +348,14 @@
               ],
               "src": "339:9:14"
             },
-            "scope": 1717,
+            "scope": 1758,
             "src": "290:59:14",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1718,
+        "scope": 1759,
         "src": "77:274:14"
       }
     ],
@@ -365,14 +365,14 @@
     "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/IOwnableUpgradeableImplementation.sol",
     "exportedSymbols": {
       "IOwnableUpgradeableImplementation": [
-        1717
+        1758
       ]
     },
-    "id": 1718,
+    "id": 1759,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1695,
+        "id": 1736,
         "literals": [
           "solidity",
           "^",
@@ -385,10 +385,10 @@
       {
         "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Marketplace/Icontracts/IOwnable.sol",
         "file": "../Marketplace/Icontracts/IOwnable.sol",
-        "id": 1696,
+        "id": 1737,
         "nodeType": "ImportDirective",
-        "scope": 1718,
-        "sourceUnit": 350,
+        "scope": 1759,
+        "sourceUnit": 406,
         "src": "26:48:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -399,31 +399,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1697,
+              "id": 1738,
               "name": "IOwnable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 349,
+              "referencedDeclaration": 405,
               "src": "123:8:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IOwnable_$349",
+                "typeIdentifier": "t_contract$_IOwnable_$405",
                 "typeString": "contract IOwnable"
               }
             },
-            "id": 1698,
+            "id": 1739,
             "nodeType": "InheritanceSpecifier",
             "src": "123:8:14"
           }
         ],
         "contractDependencies": [
-          349
+          405
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1717,
+        "id": 1758,
         "linearizedBaseContracts": [
-          1717,
-          349
+          1758,
+          405
         ],
         "name": "IOwnableUpgradeableImplementation",
         "nodeType": "ContractDefinition",
@@ -431,7 +431,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1701,
+            "id": 1742,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -439,19 +439,19 @@
             "name": "init",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1699,
+              "id": 1740,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "152:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1700,
+              "id": 1741,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "161:0:14"
             },
-            "scope": 1717,
+            "scope": 1758,
             "src": "139:23:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -460,7 +460,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1706,
+            "id": 1747,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -468,22 +468,22 @@
             "name": "getOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1702,
+              "id": 1743,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "189:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1705,
+              "id": 1746,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1704,
+                  "id": 1745,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1706,
+                  "scope": 1747,
                   "src": "213:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -492,7 +492,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1703,
+                    "id": 1744,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "213:7:14",
@@ -507,7 +507,7 @@
               ],
               "src": "212:9:14"
             },
-            "scope": 1717,
+            "scope": 1758,
             "src": "172:50:14",
             "stateMutability": "view",
             "superFunction": null,
@@ -516,7 +516,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1711,
+            "id": 1752,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -524,15 +524,15 @@
             "name": "upgradeImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1709,
+              "id": 1750,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1708,
+                  "id": 1749,
                   "name": "_newImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1711,
+                  "scope": 1752,
                   "src": "259:16:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -541,7 +541,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1707,
+                    "id": 1748,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "259:7:14",
@@ -558,12 +558,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1710,
+              "id": 1751,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "283:0:14"
             },
-            "scope": 1717,
+            "scope": 1758,
             "src": "228:56:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -572,7 +572,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1716,
+            "id": 1757,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -580,22 +580,22 @@
             "name": "getImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1712,
+              "id": 1753,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "316:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1715,
+              "id": 1756,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1714,
+                  "id": 1755,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1716,
+                  "scope": 1757,
                   "src": "340:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -604,7 +604,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1713,
+                    "id": 1754,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "340:7:14",
@@ -619,14 +619,14 @@
               ],
               "src": "339:9:14"
             },
-            "scope": 1717,
+            "scope": 1758,
             "src": "290:59:14",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1718,
+        "scope": 1759,
         "src": "77:274:14"
       }
     ],
@@ -637,6 +637,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-25T12:51:02.648Z"
+  "schemaVersion": "0.9.18",
+  "updatedAt": "2018-12-18T13:29:47.768Z"
 }

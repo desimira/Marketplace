@@ -9,8 +9,8 @@ contract Marketplace2 is IMarketplace2, OwnableUpgradeableImplementation {
     using SafeMath for uint;
     using ProductLib2 for ProductLib2.Product;
     
-    event LogNewProduct(string name, bytes32 ID);
-    event LogPurchase(string productName, uint quantity);
+    // event LogNewProduct(string name, bytes32 ID, string picHash);
+    // event LogPurchase(string productName, uint quantity);
     
 
     mapping (bytes32 => ProductLib2.Product) stock;
@@ -51,14 +51,14 @@ contract Marketplace2 is IMarketplace2, OwnableUpgradeableImplementation {
     }
     
     //creates a new product and returns its ID
-    function newProduct(string name, uint price, uint quantity) public onlyOwner returns(bytes32) {
+    function newProduct(string name, uint price, uint quantity, string picHash) public onlyOwner returns(bytes32) {
         bytes32 ID = keccak256(name);// the ID is the hash of product name
         require(!stock[ID].productExist());
         allProductsID.push(ID);//add the ID to the array
 
-        stock[ID] = ProductLib2.regNewProduct(name, price, quantity, allProductsID.length-1, false);
+        stock[ID] = ProductLib2.regNewProduct(name, price, quantity, allProductsID.length-1, false, picHash);
         
-        emit LogNewProduct(name, ID);
+        emit LogNewProduct(name, ID, picHash);
         assert(stock[ID].quantity == quantity);
         return ID;
     }

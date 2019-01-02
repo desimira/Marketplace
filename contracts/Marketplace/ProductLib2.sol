@@ -10,6 +10,7 @@ library ProductLib2 {
         uint256 quantity;
         uint256 IDindex;
         bool wasIncreased;
+        string picHash;
     }
         
     function canBeBought(Product storage self, uint amount, uint quantity) internal view returns (bool) {
@@ -34,8 +35,8 @@ library ProductLib2 {
         self.price = self.price.div(12).mul(10);
     }
     
-    function regNewProduct(string name, uint price, uint quantity, uint IDindex, bool wasIncreased) internal pure returns(Product) {
-        Product memory product = Product({name:name, price:price, quantity:quantity, IDindex:IDindex, wasIncreased: wasIncreased});
+    function regNewProduct(string name, uint price, uint quantity, uint IDindex, bool wasIncreased, string picHash) internal pure returns(Product) {
+        Product memory product = Product({name:name, price:price, quantity:quantity, IDindex:IDindex, wasIncreased: wasIncreased, picHash: picHash});
         
         return product;
     }

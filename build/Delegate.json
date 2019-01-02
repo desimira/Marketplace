@@ -11,14 +11,14 @@
     "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/Delegate.sol",
     "exportedSymbols": {
       "Delegate": [
-        1693
+        1734
       ]
     },
-    "id": 1694,
+    "id": 1735,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1685,
+        "id": 1726,
         "literals": [
           "solidity",
           "^",
@@ -34,16 +34,16 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1693,
+        "id": 1734,
         "linearizedBaseContracts": [
-          1693
+          1734
         ],
         "name": "Delegate",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1691,
+              "id": 1732,
               "nodeType": "Block",
               "src": "299:390:13",
               "statements": [
@@ -51,7 +51,7 @@
                   "externalReferences": [
                     {
                       "_dst": {
-                        "declaration": 1687,
+                        "declaration": 1728,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "447:4:13",
@@ -59,7 +59,7 @@
                       }
                     }
                   ],
-                  "id": 1690,
+                  "id": 1731,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    let ptr := mload(0x40)\n    calldatacopy(ptr, 0, calldatasize())\n    let result := delegatecall(gas(), _dst, ptr, calldatasize(), 0, 0)\n    let size := returndatasize()\n    returndatacopy(ptr, 0, size)\n    switch result\n    case 0 {\n        revert(ptr, size)\n    }\n    default {\n        return(ptr, size)\n    }\n}",
                   "src": "309:380:13"
@@ -67,7 +67,7 @@
               ]
             },
             "documentation": "@dev Performs a delegatecall and returns whatever the delegatecall returned (entire context execution will return!)\n@param _dst Destination address to perform the delegatecall",
-            "id": 1692,
+            "id": 1733,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -75,15 +75,15 @@
             "name": "delegatedFwd",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1688,
+              "id": 1729,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1687,
+                  "id": 1728,
                   "name": "_dst",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1692,
+                  "scope": 1733,
                   "src": "276:12:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -92,7 +92,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1686,
+                    "id": 1727,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "276:7:13",
@@ -109,19 +109,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1689,
+              "id": 1730,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "299:0:13"
             },
-            "scope": 1693,
+            "scope": 1734,
             "src": "254:435:13",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 1694,
+        "scope": 1735,
         "src": "27:664:13"
       }
     ],
@@ -131,14 +131,14 @@
     "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/Delegate.sol",
     "exportedSymbols": {
       "Delegate": [
-        1693
+        1734
       ]
     },
-    "id": 1694,
+    "id": 1735,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1685,
+        "id": 1726,
         "literals": [
           "solidity",
           "^",
@@ -154,16 +154,16 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1693,
+        "id": 1734,
         "linearizedBaseContracts": [
-          1693
+          1734
         ],
         "name": "Delegate",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1691,
+              "id": 1732,
               "nodeType": "Block",
               "src": "299:390:13",
               "statements": [
@@ -171,7 +171,7 @@
                   "externalReferences": [
                     {
                       "_dst": {
-                        "declaration": 1687,
+                        "declaration": 1728,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "447:4:13",
@@ -179,7 +179,7 @@
                       }
                     }
                   ],
-                  "id": 1690,
+                  "id": 1731,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    let ptr := mload(0x40)\n    calldatacopy(ptr, 0, calldatasize())\n    let result := delegatecall(gas(), _dst, ptr, calldatasize(), 0, 0)\n    let size := returndatasize()\n    returndatacopy(ptr, 0, size)\n    switch result\n    case 0 {\n        revert(ptr, size)\n    }\n    default {\n        return(ptr, size)\n    }\n}",
                   "src": "309:380:13"
@@ -187,7 +187,7 @@
               ]
             },
             "documentation": "@dev Performs a delegatecall and returns whatever the delegatecall returned (entire context execution will return!)\n@param _dst Destination address to perform the delegatecall",
-            "id": 1692,
+            "id": 1733,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -195,15 +195,15 @@
             "name": "delegatedFwd",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1688,
+              "id": 1729,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1687,
+                  "id": 1728,
                   "name": "_dst",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1692,
+                  "scope": 1733,
                   "src": "276:12:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -212,7 +212,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1686,
+                    "id": 1727,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "276:7:13",
@@ -229,19 +229,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1689,
+              "id": 1730,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "299:0:13"
             },
-            "scope": 1693,
+            "scope": 1734,
             "src": "254:435:13",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 1694,
+        "scope": 1735,
         "src": "27:664:13"
       }
     ],
@@ -252,6 +252,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-25T12:51:02.648Z"
+  "schemaVersion": "0.9.18",
+  "updatedAt": "2018-12-18T13:29:47.767Z"
 }

@@ -4,6 +4,9 @@ import '../../Upgradeability/IOwnableUpgradeableImplementation.sol';
 
 contract IMarketplace2 is IOwnableUpgradeableImplementation {
 
+    event LogNewProduct(string name, bytes32 ID, string picHash);
+    event LogPurchase(string productName, uint quantity);
+
     function buy(bytes32 ID, uint quantity) public payable;
     
     function update(bytes32 ID, uint newQuantity) public;
@@ -11,7 +14,7 @@ contract IMarketplace2 is IOwnableUpgradeableImplementation {
     function updatePrice(bytes32 ID, uint newQuantity) internal;
     
     //creates a new product and returns its ID
-    function newProduct(string name, uint price, uint quantity) public returns(bytes32);
+    function newProduct(string name, uint price, uint quantity, string picHash) public returns(bytes32);
     
     function removeProduct(bytes32 ID) public;
 
