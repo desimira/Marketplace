@@ -89,19 +89,19 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.0;\n\nimport \"../Marketplace/Icontracts/IOwnable.sol\";\n\n\ncontract IOwnableUpgradeableImplementation is IOwnable {\n\n    function init() public;\n    \n    function getOwner() public view returns (address);\n\n    function upgradeImplementation(address _newImpl) public;\n\n    function getImplementation() public view returns (address);\n}",
-  "sourcePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Upgradeability/IOwnableUpgradeableImplementation.sol",
+  "sourcePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/IOwnableUpgradeableImplementation.sol",
   "ast": {
-    "absolutePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Upgradeability/IOwnableUpgradeableImplementation.sol",
+    "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/IOwnableUpgradeableImplementation.sol",
     "exportedSymbols": {
       "IOwnableUpgradeableImplementation": [
-        1733
+        1696
       ]
     },
-    "id": 1734,
+    "id": 1697,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1711,
+        "id": 1674,
         "literals": [
           "solidity",
           "^",
@@ -112,12 +112,12 @@
         "src": "0:23:14"
       },
       {
-        "absolutePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Marketplace/Icontracts/IOwnable.sol",
+        "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Marketplace/Icontracts/IOwnable.sol",
         "file": "../Marketplace/Icontracts/IOwnable.sol",
-        "id": 1712,
+        "id": 1675,
         "nodeType": "ImportDirective",
-        "scope": 1734,
-        "sourceUnit": 354,
+        "scope": 1697,
+        "sourceUnit": 342,
         "src": "25:48:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -128,31 +128,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1713,
+              "id": 1676,
               "name": "IOwnable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 353,
+              "referencedDeclaration": 341,
               "src": "122:8:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IOwnable_$353",
+                "typeIdentifier": "t_contract$_IOwnable_$341",
                 "typeString": "contract IOwnable"
               }
             },
-            "id": 1714,
+            "id": 1677,
             "nodeType": "InheritanceSpecifier",
             "src": "122:8:14"
           }
         ],
         "contractDependencies": [
-          353
+          341
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1733,
+        "id": 1696,
         "linearizedBaseContracts": [
-          1733,
-          353
+          1696,
+          341
         ],
         "name": "IOwnableUpgradeableImplementation",
         "nodeType": "ContractDefinition",
@@ -160,25 +160,25 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1717,
+            "id": 1680,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "init",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1715,
+              "id": 1678,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "151:2:14"
             },
             "returnParameters": {
-              "id": 1716,
+              "id": 1679,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "160:0:14"
             },
-            "scope": 1733,
+            "scope": 1696,
             "src": "138:23:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -187,28 +187,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1722,
+            "id": 1685,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1718,
+              "id": 1681,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "188:2:14"
             },
             "returnParameters": {
-              "id": 1721,
+              "id": 1684,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1720,
+                  "id": 1683,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1722,
+                  "scope": 1685,
                   "src": "212:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -217,7 +217,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1719,
+                    "id": 1682,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "212:7:14",
@@ -233,7 +233,7 @@
               ],
               "src": "211:9:14"
             },
-            "scope": 1733,
+            "scope": 1696,
             "src": "171:50:14",
             "stateMutability": "view",
             "superFunction": null,
@@ -242,22 +242,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1727,
+            "id": 1690,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "upgradeImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1725,
+              "id": 1688,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1724,
+                  "id": 1687,
                   "name": "_newImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1727,
+                  "scope": 1690,
                   "src": "258:16:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -266,7 +266,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1723,
+                    "id": 1686,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "258:7:14",
@@ -283,12 +283,12 @@
               "src": "257:18:14"
             },
             "returnParameters": {
-              "id": 1726,
+              "id": 1689,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "282:0:14"
             },
-            "scope": 1733,
+            "scope": 1696,
             "src": "227:56:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -297,28 +297,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1732,
+            "id": 1695,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1728,
+              "id": 1691,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "315:2:14"
             },
             "returnParameters": {
-              "id": 1731,
+              "id": 1694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1730,
+                  "id": 1693,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1732,
+                  "scope": 1695,
                   "src": "339:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -327,7 +327,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1729,
+                    "id": 1692,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "339:7:14",
@@ -343,31 +343,31 @@
               ],
               "src": "338:9:14"
             },
-            "scope": 1733,
+            "scope": 1696,
             "src": "289:59:14",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1734,
+        "scope": 1697,
         "src": "76:274:14"
       }
     ],
     "src": "0:350:14"
   },
   "legacyAST": {
-    "absolutePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Upgradeability/IOwnableUpgradeableImplementation.sol",
+    "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Upgradeability/IOwnableUpgradeableImplementation.sol",
     "exportedSymbols": {
       "IOwnableUpgradeableImplementation": [
-        1733
+        1696
       ]
     },
-    "id": 1734,
+    "id": 1697,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1711,
+        "id": 1674,
         "literals": [
           "solidity",
           "^",
@@ -378,12 +378,12 @@
         "src": "0:23:14"
       },
       {
-        "absolutePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Marketplace/Icontracts/IOwnable.sol",
+        "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Marketplace/Icontracts/IOwnable.sol",
         "file": "../Marketplace/Icontracts/IOwnable.sol",
-        "id": 1712,
+        "id": 1675,
         "nodeType": "ImportDirective",
-        "scope": 1734,
-        "sourceUnit": 354,
+        "scope": 1697,
+        "sourceUnit": 342,
         "src": "25:48:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -394,31 +394,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1713,
+              "id": 1676,
               "name": "IOwnable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 353,
+              "referencedDeclaration": 341,
               "src": "122:8:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IOwnable_$353",
+                "typeIdentifier": "t_contract$_IOwnable_$341",
                 "typeString": "contract IOwnable"
               }
             },
-            "id": 1714,
+            "id": 1677,
             "nodeType": "InheritanceSpecifier",
             "src": "122:8:14"
           }
         ],
         "contractDependencies": [
-          353
+          341
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1733,
+        "id": 1696,
         "linearizedBaseContracts": [
-          1733,
-          353
+          1696,
+          341
         ],
         "name": "IOwnableUpgradeableImplementation",
         "nodeType": "ContractDefinition",
@@ -426,25 +426,25 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1717,
+            "id": 1680,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "init",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1715,
+              "id": 1678,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "151:2:14"
             },
             "returnParameters": {
-              "id": 1716,
+              "id": 1679,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "160:0:14"
             },
-            "scope": 1733,
+            "scope": 1696,
             "src": "138:23:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -453,28 +453,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1722,
+            "id": 1685,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1718,
+              "id": 1681,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "188:2:14"
             },
             "returnParameters": {
-              "id": 1721,
+              "id": 1684,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1720,
+                  "id": 1683,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1722,
+                  "scope": 1685,
                   "src": "212:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -483,7 +483,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1719,
+                    "id": 1682,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "212:7:14",
@@ -499,7 +499,7 @@
               ],
               "src": "211:9:14"
             },
-            "scope": 1733,
+            "scope": 1696,
             "src": "171:50:14",
             "stateMutability": "view",
             "superFunction": null,
@@ -508,22 +508,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1727,
+            "id": 1690,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "upgradeImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1725,
+              "id": 1688,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1724,
+                  "id": 1687,
                   "name": "_newImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1727,
+                  "scope": 1690,
                   "src": "258:16:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -532,7 +532,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1723,
+                    "id": 1686,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "258:7:14",
@@ -549,12 +549,12 @@
               "src": "257:18:14"
             },
             "returnParameters": {
-              "id": 1726,
+              "id": 1689,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "282:0:14"
             },
-            "scope": 1733,
+            "scope": 1696,
             "src": "227:56:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -563,28 +563,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1732,
+            "id": 1695,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1728,
+              "id": 1691,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "315:2:14"
             },
             "returnParameters": {
-              "id": 1731,
+              "id": 1694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1730,
+                  "id": 1693,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1732,
+                  "scope": 1695,
                   "src": "339:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -593,7 +593,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1729,
+                    "id": 1692,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "339:7:14",
@@ -609,14 +609,14 @@
               ],
               "src": "338:9:14"
             },
-            "scope": 1733,
+            "scope": 1696,
             "src": "289:59:14",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1734,
+        "scope": 1697,
         "src": "76:274:14"
       }
     ],
@@ -627,6 +627,6 @@
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "0.10.0",
-  "updatedAt": "2018-12-31T15:24:32.609Z"
+  "schemaVersion": "0.9.19",
+  "updatedAt": "2019-01-02T12:07:55.657Z"
 }

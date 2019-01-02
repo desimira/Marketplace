@@ -37,6 +37,15 @@ contract('register new product tests', async (accounts) => {
 		await expectThrow(instance.newProduct("fanta", 100, 20, {from:_notOwner}));
 	})
 
+	it('should emit event', async() => {
+        const expectedEvent = 'LogNewProduct';
+
+		let result = await instance.newProduct("kola", 100, 20, {from:accounts[0]});
+		assert.lengthOf(result.logs, 1, "There should be 1 event emitted from new product!");
+		assert.strictEqual(result.logs[0].event, expectedEvent, `The event emitted was ${result.logs[0].event} instead of ${expectedEvent}`);
+    })
+
+
 	
 })
 
@@ -69,7 +78,7 @@ contract('update product tests', async (accounts) => {
 	});
 
 	it('should not allow to update unexisting product', async() => {
-		await expectThrow(instance.update("jdue85", 10, {from:accounts[0]}));
+		await expectThrow(instance.update("jdhdhsduhfdsuhcsduue85", 10, {from:accounts[0]}));
 	});
 
 	it('should allow only owner to update the product', async() => {

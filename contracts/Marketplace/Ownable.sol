@@ -1,8 +1,9 @@
 pragma solidity ^0.5.0;
+pragma experimental ABIEncoderV2;
 import './Icontracts/IOwnable.sol';
 
 contract Ownable is IOwnable{
-    address payable owner;
+    address owner;
     
     
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
@@ -12,7 +13,7 @@ contract Ownable is IOwnable{
         _;
     }
     
-    function transferOwnership(address payable newOwner) public onlyOwner {
+    function transferOwnership(address newOwner) public onlyOwner {
         require(newOwner != address(0));
         emit OwnershipTransferred(owner, newOwner);
         owner = newOwner;

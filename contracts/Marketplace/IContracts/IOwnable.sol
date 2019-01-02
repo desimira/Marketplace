@@ -4,5 +4,5 @@ contract IOwnable {
     
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
     
-    function transferOwnership(address payable newOwner) public;
+    function transferOwnership(address newOwner) public;
 }

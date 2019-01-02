@@ -37,20 +37,20 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.5.1;\n\ncontract IOwnable {\n    \n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\n    \n    function transferOwnership(address payable newOwner) public;\n}",
-  "sourcePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Marketplace/Icontracts/IOwnable.sol",
+  "source": "pragma solidity ^0.5.1;\n\ncontract IOwnable {\n    \n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\n    \n    function transferOwnership(address newOwner) public;\n}",
+  "sourcePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Marketplace/Icontracts/IOwnable.sol",
   "ast": {
-    "absolutePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Marketplace/Icontracts/IOwnable.sol",
+    "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Marketplace/Icontracts/IOwnable.sol",
     "exportedSymbols": {
       "IOwnable": [
-        353
+        341
       ]
     },
-    "id": 354,
+    "id": 342,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 341,
+        "id": 329,
         "literals": [
           "solidity",
           "^",
@@ -66,9 +66,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 353,
+        "id": 341,
         "linearizedBaseContracts": [
-          353
+          341
         ],
         "name": "IOwnable",
         "nodeType": "ContractDefinition",
@@ -76,20 +76,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 347,
+            "id": 335,
             "name": "OwnershipTransferred",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 346,
+              "id": 334,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 343,
+                  "id": 331,
                   "indexed": true,
                   "name": "previousOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 347,
+                  "scope": 335,
                   "src": "81:29:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -98,7 +98,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 342,
+                    "id": 330,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "81:7:5",
@@ -113,11 +113,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 345,
+                  "id": 333,
                   "indexed": true,
                   "name": "newOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 347,
+                  "scope": 335,
                   "src": "112:24:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -126,7 +126,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 344,
+                    "id": 332,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "112:7:5",
@@ -147,77 +147,77 @@
           {
             "body": null,
             "documentation": null,
-            "id": 352,
+            "id": 340,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "transferOwnership",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 350,
+              "id": 338,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 349,
+                  "id": 337,
                   "name": "newOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 352,
-                  "src": "175:24:5",
+                  "scope": 340,
+                  "src": "175:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_address_payable",
-                    "typeString": "address payable"
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
                   },
                   "typeName": {
-                    "id": 348,
+                    "id": 336,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "175:15:5",
-                    "stateMutability": "payable",
+                    "src": "175:7:5",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_address_payable",
-                      "typeString": "address payable"
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "174:26:5"
+              "src": "174:18:5"
             },
             "returnParameters": {
-              "id": 351,
+              "id": 339,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "207:0:5"
+              "src": "199:0:5"
             },
-            "scope": 353,
-            "src": "148:60:5",
+            "scope": 341,
+            "src": "148:52:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 354,
-        "src": "25:185:5"
+        "scope": 342,
+        "src": "25:177:5"
       }
     ],
-    "src": "0:210:5"
+    "src": "0:202:5"
   },
   "legacyAST": {
-    "absolutePath": "/Users/desimiramitkova/solidity/homework/MarketPlace/contracts/Marketplace/Icontracts/IOwnable.sol",
+    "absolutePath": "/Users/desimiramitkova/Projects/marketplace/contracts/Marketplace/Icontracts/IOwnable.sol",
     "exportedSymbols": {
       "IOwnable": [
-        353
+        341
       ]
     },
-    "id": 354,
+    "id": 342,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 341,
+        "id": 329,
         "literals": [
           "solidity",
           "^",
@@ -233,9 +233,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 353,
+        "id": 341,
         "linearizedBaseContracts": [
-          353
+          341
         ],
         "name": "IOwnable",
         "nodeType": "ContractDefinition",
@@ -243,20 +243,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 347,
+            "id": 335,
             "name": "OwnershipTransferred",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 346,
+              "id": 334,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 343,
+                  "id": 331,
                   "indexed": true,
                   "name": "previousOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 347,
+                  "scope": 335,
                   "src": "81:29:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -265,7 +265,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 342,
+                    "id": 330,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "81:7:5",
@@ -280,11 +280,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 345,
+                  "id": 333,
                   "indexed": true,
                   "name": "newOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 347,
+                  "scope": 335,
                   "src": "112:24:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -293,7 +293,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 344,
+                    "id": 332,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "112:7:5",
@@ -314,70 +314,70 @@
           {
             "body": null,
             "documentation": null,
-            "id": 352,
+            "id": 340,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "transferOwnership",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 350,
+              "id": 338,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 349,
+                  "id": 337,
                   "name": "newOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 352,
-                  "src": "175:24:5",
+                  "scope": 340,
+                  "src": "175:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_address_payable",
-                    "typeString": "address payable"
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
                   },
                   "typeName": {
-                    "id": 348,
+                    "id": 336,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "175:15:5",
-                    "stateMutability": "payable",
+                    "src": "175:7:5",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_address_payable",
-                      "typeString": "address payable"
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "174:26:5"
+              "src": "174:18:5"
             },
             "returnParameters": {
-              "id": 351,
+              "id": 339,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "207:0:5"
+              "src": "199:0:5"
             },
-            "scope": 353,
-            "src": "148:60:5",
+            "scope": 341,
+            "src": "148:52:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 354,
-        "src": "25:185:5"
+        "scope": 342,
+        "src": "25:177:5"
       }
     ],
-    "src": "0:210:5"
+    "src": "0:202:5"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "0.10.0",
-  "updatedAt": "2018-12-31T15:24:32.589Z"
+  "schemaVersion": "0.9.19",
+  "updatedAt": "2019-01-02T12:07:55.646Z"
 }
